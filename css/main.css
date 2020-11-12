@@ -1,0 +1,41 @@
+/* VARIABLES */
+@media all and (max-width : 480px) {
+  /* GENERAL */
+  body {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+  }
+  header img {
+    width: 200px;
+    margin: 12px 0;
+  }
+
+  /* SECTION 1*/
+  .containerLoc__localisation {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    box-shadow: 2px 2px 2px #cccccc inset;
+  }
+  .containerLoc__localisation i {
+    padding: 15px 17px 15px 0;
+  }
+  .containerLoc__localisation p {
+    margin-right: 10px;
+  }
+
+  /* SECTION 2 */
+  /* SECTION 3 */
+  /* FOOTER */
+  footer img {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
