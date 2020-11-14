@@ -9,6 +9,7 @@
 
   a {
     text-decoration: none;
+    color: black;
   }
   a:visited {
     color: black;
@@ -17,10 +18,17 @@
   /* HEADER */
   header {
     text-align: center;
+    position: relative;
   }
   header img {
-    width: 200px;
+    width: 180px;
     margin: 12px 0;
+  }
+  header i {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 1.2em;
   }
 
   /* SECTION 1*/

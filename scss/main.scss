@@ -17,6 +17,7 @@ $tertiary-color: #99E2D0;
     }
     a {
         text-decoration: none;
+        color: black;
         &:visited {
             color: black;
         }
@@ -26,9 +27,16 @@ $tertiary-color: #99E2D0;
     /* HEADER */
     header{
         text-align: center;
+        position: relative;
         img {
-            width: 200px;
+            width: 180px;
             margin: 12px 0;
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            font-size: 1.2em;
         }
     }
 
