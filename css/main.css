@@ -1,201 +1,305 @@
 /* VARIABLES */
-@media all and (max-width : 480px) {
-  /* GENERAL */
-  body {
-    width: 100%;
-    margin-left: 0;
-    font-family: "Roboto", sans-serif;
-  }
+/* GENERAL */
+body {
+  width: 100%;
+  margin-left: 0;
+  font-family: "Roboto", sans-serif;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  a:visited {
-    color: black;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
 
-  /* HEADER */
-  header {
-    text-align: center;
-    position: relative;
-  }
-  header img {
-    width: 180px;
-    margin: 12px 0;
-  }
-  header i {
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    font-size: 1.2em;
-  }
+/* HEADER */
+header {
+  text-align: center;
+  position: relative;
+}
+header img {
+  width: 180px;
+  margin: 12px 0;
+}
+header i {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  font-size: 1.2em;
+}
 
-  /* SECTION 1*/
-  .containerLoc__localisation {
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #e9e9e9;
-    box-shadow: 2px 2px 2px #c3c3c3 inset;
-  }
-  .containerLoc__localisation i {
-    padding: 15px 17px 15px 0;
-  }
-  .containerLoc__localisation p {
-    margin-right: 10px;
-    font-weight: 400;
-  }
-  .containerLoc__explore {
-    background-color: #F2F2F2;
-    height: 260px;
-  }
-  .containerLoc__explore h1 {
-    text-align: center;
-    padding: 20px 20px 10px 20px;
-    margin: 0px 30px 5px 30px;
-  }
-  .containerLoc__explore p {
-    font-weight: 100;
-    font-size: 1.1em;
-    text-align: center;
-    margin-top: 0;
-  }
-  .containerLoc__explore button {
-    display: block;
-    margin: 30px auto;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 30px;
-    font-size: 0.95em;
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: white;
-    box-shadow: 5px 5px 5px #d9d9d9;
-  }
+/* SECTION 1*/
+.containerLoc__localisation {
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  box-shadow: 2px 2px 2px #c3c3c3 inset;
+}
+.containerLoc__localisation i {
+  padding: 15px 17px 15px 0;
+}
+.containerLoc__localisation p {
+  margin-right: 10px;
+  font-weight: 400;
+}
+.containerLoc__explore {
+  background-color: #F2F2F2;
+  height: 260px;
+}
+.containerLoc__explore h1 {
+  text-align: center;
+  padding: 20px 20px 10px 20px;
+  margin: 0px 30px 5px 30px;
+}
+.containerLoc__explore p {
+  font-weight: 100;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 0;
+}
+.containerLoc__explore button {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95em;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  padding: 15px 20px;
+  margin: 30px auto;
+}
 
-  /* SECTION 2 */
-  .operation h2 {
-    margin: 50px 20px 20px 20px;
-  }
-  .operation__steps {
-    position: relative;
-    height: 70px;
-    display: flex;
-    background-color: #F2F2F2;
-    margin: 20px;
-    border-radius: 20px;
-    align-items: center;
-    box-shadow: 5px 5px 5px #d9d9d9;
-  }
-  .operation__steps .number {
-    position: absolute;
-    top: 24px;
-    left: -8px;
-    height: 15px;
-    padding: 5px 9px;
-    background-color: #9356DC;
-    color: white;
-    font-size: 0.75em;
-    border-radius: 25px;
-  }
-  .operation__steps h3 {
-    font-weight: 400;
-    font-size: 1em;
-  }
-  .operation__steps h3 i {
-    margin-left: 40px;
-    padding-right: 25px;
-    font-size: 1.2em;
-    color: gray;
-  }
+/* SECTION 2 */
+.operation h2 {
+  margin: 50px 20px 20px 20px;
+}
+.operation__steps {
+  position: relative;
+  height: 70px;
+  display: flex;
+  background-color: #F2F2F2;
+  margin: 20px;
+  border-radius: 20px;
+  align-items: center;
+  box-shadow: 5px 5px 5px #d9d9d9;
+}
+.operation__steps .number {
+  position: absolute;
+  top: 24px;
+  left: -8px;
+  height: 15px;
+  padding: 5px 9px;
+  background-color: #9356DC;
+  color: white;
+  font-size: 0.75em;
+  border-radius: 25px;
+}
+.operation__steps h3 {
+  font-weight: 400;
+  font-size: 1em;
+}
+.operation__steps h3 i {
+  margin-left: 40px;
+  padding-right: 25px;
+  font-size: 1.2em;
+  color: gray;
+}
 
-  /* SECTION 3 */
-  .restaurants {
-    background-color: #F2F2F2;
-    margin-top: 70px;
-    padding-bottom: 40px;
-  }
-  .restaurants h2 {
-    padding: 50px 20px 0 20px;
-  }
+/* SECTION 3 */
+.restaurants {
+  background-color: #F2F2F2;
+  margin-top: 70px;
+  padding-bottom: 40px;
+}
+.restaurants h2 {
+  padding: 50px 20px 0 20px;
+}
 
-  .thumbnails {
-    width: 90%;
-    height: 245px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #d9d9d9;
-  }
-  .thumbnails__image {
-    position: relative;
-  }
-  .thumbnails__image img {
-    width: 100%;
-    height: 170px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-  }
-  .thumbnails__image .new {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: #99E2D0;
-    color: #2c9c81;
-    padding: 5px 12px;
-    font-size: 0.9em;
-    border-radius: 3px;
-  }
-  .thumbnails__text {
-    display: flex;
-    position: relative;
-  }
-  .thumbnails__text__title h3 {
-    margin: 10px 0 0 15px;
-    font-size: 1.1em;
-  }
-  .thumbnails__text__title p {
-    margin: 5px 0 10px 15px;
-    font-weight: 300;
-    font-size: 1.05em;
-  }
-  .thumbnails__text__icon {
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-    font-size: 1.6em;
-  }
+.thumbnails {
+  width: 90%;
+  height: 245px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #d9d9d9;
+}
+.thumbnails__image {
+  position: relative;
+}
+.thumbnails__image img {
+  width: 100%;
+  height: 170px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.thumbnails__image .new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  padding: 5px 12px;
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+.thumbnails__text {
+  display: flex;
+  position: relative;
+}
+.thumbnails__text__title h3 {
+  margin: 10px 0 0 15px;
+  font-size: 1.1em;
+}
+.thumbnails__text__title p {
+  margin: 5px 0 10px 15px;
+  font-weight: 300;
+  font-size: 1.05em;
+}
+.thumbnails__text__icon {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  font-size: 1.6em;
+}
 
-  /* FOOTER */
-  footer {
-    background-color: #3B3B43;
-    padding-bottom: 30px;
-  }
-  footer img {
-    width: 100px;
-    margin: 20px 0 15px 20px;
-    filter: invert(100%);
-  }
-  footer ul {
-    margin: 0;
-    padding-left: 20px;
-    list-style-type: none;
-  }
-  footer ul li {
-    margin-bottom: 8px;
-  }
-  footer a {
-    color: white !important;
-    font-weight: 300;
-    font-size: 0.9em;
-  }
-  footer a i {
-    margin-right: 10px;
-    font-size: 0.75em;
-  }
-  footer a .fa-utensils {
-    font-size: 1em;
-  }
+/* FOOTER */
+footer {
+  background-color: #3B3B43;
+  padding-bottom: 30px;
+}
+footer img {
+  width: 100px;
+  margin: 20px 0 15px 20px;
+  filter: invert(100%);
+}
+footer ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 8px;
+}
+footer a {
+  color: white !important;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+footer a i {
+  margin-right: 10px;
+  font-size: 0.75em;
+}
+footer a .fa-utensils {
+  font-size: 1em;
+}
+
+/* PAGES MENUS */
+/* GENERAL */
+#backgroundMenu1 {
+  width: 100%;
+  height: 270px;
+  background-size: 100% 270px;
+  background-repeat: no-repeat;
+  background-position-y: 65px;
+  background-image: url("/Users/benoitdurand/Documents/BenoitDurand_3_121120/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+#backgroundMenu2 {
+  width: 100%;
+  height: 270px;
+  background-size: 100% 270px;
+  background-repeat: no-repeat;
+  background-position-y: 65px;
+  background-size: cover;
+  background-image: url("/Users/benoitdurand/Documents/BenoitDurand_3_121120/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+#backgroundMenu3 {
+  width: 100%;
+  height: 270px;
+  background-size: 100% 270px;
+  background-repeat: no-repeat;
+  background-position-y: 65px;
+  background-image: url("/Users/benoitdurand/Documents/BenoitDurand_3_121120/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#backgroundMenu4 {
+  width: 100%;
+  height: 270px;
+  background-size: 100% 270px;
+  background-repeat: no-repeat;
+  background-position-y: 65px;
+  background-image: url("/Users/benoitdurand/Documents/BenoitDurand_3_121120/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+/* SECTION 1 */
+.containerMenu {
+  border-radius: 40px 40px 0 0;
+  background-color: #F2F2F2;
+  padding-bottom: 20px;
+  margin-top: 220px;
+}
+.containerMenu__title {
+  display: flex;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.containerMenu__title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.7em;
+  margin-bottom: 7px;
+}
+.containerMenu__title i {
+  margin: 30px 0 0 40px;
+  font-size: 1.7em;
+}
+.containerMenu__food h2 {
+  font-weight: 300;
+  font-size: 1em;
+  margin: 0 0 15px 20px;
+  padding: 25px 0 5px 0;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+.containerMenu button {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95em;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  padding: 15px 50px;
+  margin: 50px auto;
+}
+
+.thumbnailsMenu {
+  width: 90%;
+  margin: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+}
+.thumbnailsMenu__title {
+  width: 80%;
+}
+.thumbnailsMenu__title h3 {
+  margin: 10px 0 5px 10px;
+  font-size: 1.1em;
+}
+.thumbnailsMenu__title p {
+  margin: 0 0 10px 10px;
+  font-weight: 300;
+  font-size: 0.89em;
+}
+.thumbnailsMenu__price {
+  font-size: 0.9em;
+  margin: 20px 20px 0 0;
 }
 
 /*# sourceMappingURL=main.css.map */
