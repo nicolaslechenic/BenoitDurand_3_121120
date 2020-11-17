@@ -302,4 +302,93 @@ footer a .fa-utensils {
   margin: 20px 20px 0 0;
 }
 
+/* MEDIA QUERIES */
+@media all and (min-width : 1170px) {
+  /* Page d'accueil */
+  /* HEADER */
+  header img {
+    width: 220px;
+  }
+
+  /* SECTION 1 */
+  .containerLoc__localisation {
+    font-size: 1.2em;
+  }
+  .containerLoc__localisation i {
+    padding-top: 20px;
+  }
+  .containerLoc__explore h1 {
+    font-size: 1.9em;
+  }
+  .containerLoc__explore p {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .containerLoc__explore button {
+    display: block;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2em;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    box-shadow: 7px 7px 7px #d9d9d9;
+  }
+
+  /* SECTION 2 */
+  .operation {
+    display: flex;
+  }
+  .operation__steps {
+    width: 25%;
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+
+  /* SECTION 3 */
+  .restaurants {
+    display: flex;
+  }
+  .restaurants .thumbnails {
+    width: 25%;
+  }
+
+  /* PAGES MENU */
+  #backgroundMenu1, #backgroundMenu2, #backgroundMenu3, #backgroundMenu4 {
+    background-size: 100% 1000px;
+  }
+
+  /* SECTION 1 */
+  .containerMenu {
+    margin-top: 800px;
+  }
+  .containerMenu__title {
+    font-size: 1.6em;
+  }
+  .containerMenu__title i {
+    margin-top: 40px;
+  }
+  .containerMenu h2 {
+    margin-right: 60px;
+    margin-top: 10px;
+    height: 25px;
+    font-size: 1.3em;
+  }
+  .containerMenu__food {
+    display: flex;
+    margin-top: 30px;
+  }
+  .containerMenu__food .thumbnailsMenu {
+    width: 25%;
+  }
+  .containerMenu button {
+    display: block;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2em;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    box-shadow: 7px 7px 7px #d9d9d9;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

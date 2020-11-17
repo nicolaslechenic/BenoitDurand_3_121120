@@ -1,12 +1,13 @@
 /* VARIABLES */
-$mobile: "all and (max-width : 480px)";
+$largeScreen: "all and (min-width : 1170px)";
+$mediumScreen:"all and (min-width: 481px) and (max-width: 1169px)";
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $backgroundColor: #F2F2F2;
 
-@mixin buttonStyle {
+@mixin buttonStyleSmall {
     display: block;
     border: none;
     border-radius: 30px;
@@ -14,6 +15,16 @@ $backgroundColor: #F2F2F2;
     background: linear-gradient($secondary-color, $primary-color);
     color: white;
     box-shadow: 5px 5px 5px darken($backgroundColor, 10);
+}
+@mixin buttonStyleLarge {
+    display: block;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2em;
+    background: linear-gradient($secondary-color, $primary-color);
+    color: white;
+    box-shadow: 7px 7px 7px darken($backgroundColor, 10);
+
 }
 @mixin backgroundMenu {
     width: 100%;
@@ -37,10 +48,7 @@ $backgroundColor: #F2F2F2;
             color: black;
         }
     }
-    // button {
-        
-    // }
-
+    
 
     /* HEADER */
     header{
@@ -90,7 +98,7 @@ $backgroundColor: #F2F2F2;
                 margin-top: 0;
             }
             button {
-                @include buttonStyle();
+                @include buttonStyleSmall();
                 padding: 15px 20px;
                 margin: 30px auto;
             }
@@ -124,7 +132,6 @@ $backgroundColor: #F2F2F2;
                 border-radius: 25px;
             }
             h3 {
-                // margin: auto;
                 font-weight: 400;
                 font-size: 1em;
                 i {
@@ -281,7 +288,7 @@ $backgroundColor: #F2F2F2;
             }
         }
         button {
-            @include buttonStyle();
+            @include buttonStyleSmall();
             padding: 15px 50px;
             margin: 50px auto;
         }
@@ -300,7 +307,7 @@ $backgroundColor: #F2F2F2;
                 margin: 10px 0 5px 10px;
                 font-size: 1.1em;
             }
-            p{
+            p {
                 margin: 0 0 10px 10px;
                 font-weight: 300;
                 font-size: 0.89em;
@@ -312,3 +319,88 @@ $backgroundColor: #F2F2F2;
         }
     }
   
+/* MEDIA QUERIES */
+
+@media #{$largeScreen}
+{
+    /* Page d'accueil */
+
+    /* HEADER */
+    header {
+        img {
+            width: 220px;
+        }
+    }
+
+    /* SECTION 1 */
+    .containerLoc {
+        &__localisation {
+            font-size: 1.2em;
+            i {
+                padding-top: 20px;
+            }
+        }
+        &__explore {
+            h1 {
+                font-size: 1.9em;
+            }
+            p {
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+            button {
+                @include buttonStyleLarge();
+            }
+        }
+    }
+
+    /* SECTION 2 */
+    .operation {
+        display: flex;
+        &__steps {
+            width: 25%;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+    }
+
+    /* SECTION 3 */
+    .restaurants {
+        display: flex; 
+        .thumbnails {
+            width: 25%;
+        }
+    }
+    
+    /* PAGES MENU */
+    #backgroundMenu1, #backgroundMenu2, #backgroundMenu3, #backgroundMenu4{
+        background-size: 100% 1000px;
+    }
+
+    /* SECTION 1 */
+    .containerMenu {
+        margin-top: 800px;
+        &__title{
+            font-size: 1.6em;
+            i {
+                margin-top: 40px;
+            }
+        }
+        h2 {
+            margin-right: 60px;
+            margin-top: 10px;
+            height: 25px;
+            font-size: 1.3em;
+        }
+        &__food {
+            display: flex;
+            margin-top: 30px;
+            .thumbnailsMenu {
+                width: 25%;
+            }
+        }
+        button {
+            @include buttonStyleLarge();
+        }
+    } 
+}
